@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100svh;
+  background-color: rgb(36, 34, 34);
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 450px);
+  /* grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); */
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-list__item {
+}
+
+/* CARD STYLES BELOW  */
+
+:root {
+  --font-card: Montserrat, sans-serif;
+  --font-course: ActayWide, sans-serif;
+  --color-card-accent: #4d06a3;
+  --padding-card: 50px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 30px;
+  border-radius: 999px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1;
+  background-color: var(--color-card-accent);
+}
+
+.badge_no-r {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 520px;
+  border-radius: 30px;
+  overflow: hidden;
+  font-family: var(--font-card);
+  font-weight: 500;
+  color: var(--color-card-accent);
+  /* background: url("/src/img/bg-min.jpg") no-repeat center center / cover; */
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: var(--padding-card) 0;
+}
+
+.card__header,
+.card__name {
+  position: relative;
+  z-index: 1;
+  padding: 0 var(--padding-card);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0;
+  min-height: 38px;
+}
+
+
+.card__header:after {
+  content: '';
+  height: 1px;
+  flex-grow: 1;
+  background-color: var(--color-card-accent);
+}
+
+.card__logo {
+  margin-right: 13px;
+}
+
+.card__number {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: left;
+  margin-right: 15px;
+}
+
+.card__badge {
+  order: 3;
+  padding-left: 18px;
+  padding-right: var(--padding-card);
+  min-width: 137px;
+  text-align: left;
+}
+
+.card__name {
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 33.35px;
+  text-align: left;
+}
+
+.card__preview {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-position: top center;
+  object-fit: cover;
+}

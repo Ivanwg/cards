@@ -1,0 +1,31 @@
+@font-face {
+  font-family: ActayWide;
+  font-weight: 700;
+  font-style: normal;
+  src: url(/src/fonts/ActayWide/ActayWide-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: italic;
+  src: url(/src/fonts/Montserrat/Montserrat-Italic.woff2) format("woff2");
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+  src: url(/src/fonts/Montserrat/Montserrat-Medium.woff2) format("woff2");
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: normal;
+  src: url(/src/fonts/Montserrat/Montserrat-SemiBold.woff2) format("woff2");
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+  src: url(/src/fonts/Montserrat/Montserrat-Bold.woff2) format("woff2");
+}
